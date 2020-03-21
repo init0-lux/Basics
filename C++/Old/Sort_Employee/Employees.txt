@@ -1,0 +1,16 @@
+*****************************************Employee List********************************
+NAME 										SALARY
+
+John					 					500005
+Doe					 					512105
+Henry					 					241245
+Jake					 					454535
+Jill					 					445244
+Tom					 					454575
+Bill					 					454515
+Richard					 					454251
+Bert					 					454555
+Gabe					 					154525
+Michael					 					545255
+Hello										543125
+Eminem										999999
