@@ -1,0 +1,22 @@
+rustc *.rs
+
+cargo new project_name
+cd project_name
+cargo build 				// to build project. executable in target/debug/
+cargo run 				// to run executable
+cargo check 				// to check for compilation errors. faster than cargo build
+
+use std::io; 				// Import io library from std library into scope. req for user input
+
+let foo = bar; 				// used to create variables. immutable by default .
+let mut bar = 5;			// mutable var
+
+io::stdin()				// using stding func from io lib
+	.read_line(&mut bar)		// &mut bar = reference. NOT &bar
+	.expect("Failed to read line!");// . = method call. use line breaks. convention.
+					// if you don't call expect; compilation will point out error. 
+
+println!("Hey {}", name);		// prints out "Hey <name>". python style, printf style.
+
+crate = collection of rust files
+mod Cargo.toml to inclue "rand" or crate
