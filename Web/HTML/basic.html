@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Basic HTML</title>
+		<style>
+			/* CSS Goes here */
+			body {
+				background: azure;
+				color: black;
+			}
+
+			.inline {
+				display: inline;
+			}
+
+			a {
+				background-color: white;
+			}
+
+			video {
+				padding-left: 190px;
+			}
+
+			.mid {
+				float: left;
+				width: 44px;
+				height: 88px;
+			}
+
+			table, th, td {
+				border: 1px solid cyan;
+				border-collapse: collapse;
+				background: black;
+				color: white;
+			}
+			
+			input {
+				display: block;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<! 6 headers in HTML. big - short -->
+		<h1 class="inline" style="color: red;">Header 1 </h1>
+		<h2 class="inline">Header 2 </h2>
+		<h3 class="inline" style="color: green;">Header 3 </h3>
+		<h4 class="inline">Header 4 </h4>
+		<h5 class="inline" style="color: blue;">Header 5 </h5>
+		<h6 class="inline">Header 6 </h6>
+
+		<! this is a line break, and a horizontal line -->
+		<br>
+		<hr>
+		<p>This is a paragraph. it formats itself, compared to plain text. You can add <b>Bold,</b> <i>Italicized</i>, or <b><i>Both.</i></b></p>
+		<p>This is another paragraph. you can add "big" <big> to make text big </big>. <small>Same with small</small></p>
+		<hr>
+
+		<p>This is a <sub>sub</sub> and this is a <sup>Super</sup> script.</p>
+
+		<! Formatting tricks -->
+		<! Use header, footer, main tags -->
+		<! Use article tag for articles -->
+		<! Use navbar tag for navbar -->
+		<! Use section tag for sections -->
+		<hr>
+		
+		<a href="#" target="_blank">This link will open in a new tab</a><br>
+		<a href="#">This link will not open in a new tab</a>
+		<hr>
+
+		<div style="float: left;" display="block" bgcolor=""><img src="bg0" alt="This is a local image." width="500" /></div>
+		<div style="float: right; padding-left: 20px;" display="block"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W8apTKARTqVhmLzMCisNmAHaEs%26pid%3DApi%26h%3D160&f=1" alt="This is an external link." width="500" /></div>
+		<! add "autoplay" to autoplay. "loop" to loop. add a thumbnail with "poster=''" -->
+		<video src="vid.mp4" controls>This is a local video with controls</video>
+		<hr>
+
+		<! Lists -->
+		<! ul = unordered lists. ol = ordered lists. -->
+		<! li = list items -->
+		<ul style="float: left;">
+			<li><a href="#">Apples</a></li>
+			<li><a href="#">Oranges</a></li>
+			<li><a href="#">Kiwis</a></li>
+		</ul>
+		<ol type="A" style="float: left; margin-left: 20px;"> <! possible values = "A", "a", "I", "i", "1" -->
+			<li><a href="#">Bananas</a></li>
+			<li><a href="#">Pineapples</a></li>
+			<li><a href="#">Candy</a></li>
+		</ol>
+
+		<! dl = description lists. -->
+		<! With these, you can list items and describe them -->
+		<div class="mid"></div>
+		<dl>
+			<dt>People</dt>
+			<dd>Something about people</dd>
+			<dt>Humans</dt>
+			<dd>Same as people</dd>
+		</dl>
+		<hr>
+
+		<! Tables -->
+		<! You can set a border. -->
+		<table border="1" style="width: 100%; text-align: center;">
+			<thead>
+				<caption style="background: black;"><h3>This is a caption</h3></caption>
+				<tr>
+					<th>Head1</th>
+					<th>Head2</th>
+					<th>Head3</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>One</td>
+					<td>Two</td>
+					<td>Three</td>
+				</tr>
+				<tr>
+					<td>Four</td>
+					<td>Five</td>
+					<td>Six</td>
+				</tr>
+				<tr>
+					<td>Seven</td>
+					<td>Eight</td>
+					<td>Nine</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+
+		<! Forms and Inputs -->
+		<form>
+			<label for="text">This is a text input</label>
+			<input id="" type="text" name="">
+
+			<label for="checkbox" style="display: block;">This is a checkbox</label>
+			<input id="" type="checkbox" name="" style="display: inline;">
+			<input id="" type="checkbox" name="" style="display: inline">
+
+			<label for="color" style="display: block;">This is a color input</label>
+			<input id="" type="color" name="">
+
+			<label for="date">This is a date input</label>
+			<input id="" type="date" name="">
+
+			<label for="email">This is an email input</label>
+			<input id="" type="email" name="">
+
+			<label for="file">This is a file input</label>
+			<input id="" type="file" name="">
+			
+			<label for="password">This is a password input</label>
+			<input id="" type="password" name="">
+
+			<label for="radio" style="display: block">These are radio buttons</label>
+			<input id="" type="radio" name="" style="display: inline;">
+			<input id="" type="radio" name="" style="display: inline;">
+	
+			<label for="range" style="display: block;">This is a range input</label>
+			<input id="" type="range" name="">
+
+			<label for="reset">this button resets the other inputs</label>
+			<input type="reset" value="Reset">
+
+			<label for="search">This is a search input</label>
+			<input id="" type="search" name="">
+
+			<label for="submit">This is a submit button</label>
+			<input type="submit" value="Submit">
+
+			<label for="tel">This is a telephone input box</label>
+			<input id="" type="tel" name="">
+
+			<label for="url">This is a url input box</label>
+			<input id="" type="url" name="">
+
+			This is a textarea
+			<textarea id="" name="" cols="30" rows="10" style="display: block;">Default Text</textarea>
+		</form>
+		<hr>
+
+		<! iframe shows a preview of the "src" as a window on your site-->
+		<iframe src="https://stxaviersschool.com" frameborder="0" style="width: 80%; padding-left: 300px; height: 600px;"></iframe>
+	</body>
+	<footer>
+		<hr>
+		<div style="width: 100%; height: 500px; background: #640a0a; padding-top: 50px; margin-top: 100px;"></div>
+	</footer>
+</html>
