@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Grid</title>
+		<style>
+			.container {
+				display: grid;
+				background: blue;
+				color: black;
+
+				grid-column-gap: 5px; /* gap between columns */
+				grid-row-gap: 5px; /* gap between rows */
+				/* grid-gap: 5px 5px; row, column */
+				grid-template-columns: auto auto; /* make columns. auto- auto width */
+				/* grid-template-columns: 186px 90px auto;  1st of 186, 2nd of 90, third auto */
+			}
+
+			.item {
+				background: cyan;
+				border: 2px solid white;
+			}
+
+			.i1 {
+				grid-column: 1/3; /* extends element till the third line; */
+			}
+		</style>
+	</head>
+	<body bgcolor="black">
+		<div class="container">
+			<div class="item i1">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+			<div class="item">7</div>
+			<div class="item">8</div>
+			<div class="item">9</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Transforms, Transitions, and Animations</title>
+		<style>
+			.con {
+				background: red;
+				color: black;
+				width: 1000px;
+				height: 800px;
+			}
+	
+			.box {
+				border: 2px solid white;
+				/* transform: translate( 20px ); /* Shifts div 20px to left */
+				/* translate( x, y ) */
+				/* rotate( 0.5 turn ) rotates element*/
+				/* scaleX() */
+				/* scaleY() */
+				/* skew() */
+				/* matrix() */
+				/* scale() */
+				/* transform: skew(4deg);  */
+				/* matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() ) */
+
+				/* 3D transforms */
+				/* transform: rotateX() */
+					   /* rotateY() */
+					   /* rotateZ() */
+				height: 100px;
+				
+				/* transition-property: height; */
+				/* transition-duration: 1s; */
+				/* transition-timing-function: ease-in; */
+				/* transition-delay: 3s; */
+
+				transition: height 1s ease-in 1s;
+			}
+			
+			.box:hover {
+				height: 50%;
+			}
+
+			button {
+				background: black;
+				color: aqua;
+			}
+		</style>
+	</head>
+	<body bgcolor="black">
+		<div class="con">
+			<div class="box" id="Box">
+				Ipsum velit explicabo impedit sequi cum ipsam Fugit accusamus illum nostrum ipsa harum excepturi Sunt magni asperiores itaque consequatur est velit iure Aliquam iure in pariatur quo accusamus Delectus dolores pariatur ea eum libero? Repellat reiciendis consequatur temporibus neque aspernatur! Et alias magnam
+			</div>
+			<button id="btn">Toggle</button>
+		</div>
+		<script>
+			Box.style.height = '100px';
+			btn.addEventListener( "click", ()=>{
+				if ( Box.style.height === '50%' ){
+					Box.style.height = '100px';
+				}
+
+				else if ( Box.style.height === '100px') {
+					Box.style.height = '50%';
+				}
+			})
+		</script>
+	</body>
+</html>

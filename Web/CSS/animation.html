@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Animations</title>
+		<style>
+			.con {
+				height: 100vh;
+				width: 100vw;
+				background: aqua;
+			}
+
+			.box {
+				width: 300px;
+				height: 300px;
+				background: black;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				/* animation-name: first; */
+				/* animation-duration: 3s; */
+				/* animation-timing-function: ease-in-out; */
+				/* animation-delay: 1s; */
+				/* animation-iteration-count: 3; */
+				/* animation-direction: alternate-reverse; */
+
+				animation: first 3s ease-in-out 1s 3 alternate;
+			}
+
+			@keyframes first {
+				from {
+					width: 300px;
+					height: 300px;
+				}
+
+				to {
+					width: 600px;
+					height: 600px;
+				}
+			}
+
+			@keyframes firstper {
+				0% {
+				}
+
+				50% {
+				}
+
+				100% {
+				}
+			}
+		</style>
+	</head>
+	<body bgcolor="red">
+		<div class="con">
+			<div class="box">
+				<h1>Yo.</h1>
+			</div>
+		</div>
+	</body>
+</html>
