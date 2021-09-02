@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Flexbox</title>
+		<style>
+			.box1,.box2 {
+				height: 234px;
+				width: 345px;
+				border: 2px solid white;
+			}
+
+			.box1 {
+				background: #F00;
+				/* flex-grow: 3; /* increases element size, NO width given. v or h depends on flex-direc*/ */
+			}
+
+			.box2 {
+				background: #00F;
+			}
+
+			.cont {
+				display: flex;
+				flex-direction: row; /* row makes them horizontal, left -> right. column - vertical. row-reverse h right->left*/
+				flex-wrap: wrap; /* Wraps the content if there's less space available. as text */
+				/* wrap-reverse: when completely zoomed in, the content is in opp order */
+
+				justify-content: center; /* how to center a div !!!; many properties */
+				/* align-items: center; /* Vertical align; many properties; treats div as items. spaces on wrap; */
+				background: aqua;
+				height: 50vh;
+				align-content: center; /* v-align; many properties; treats divs as content; no spaces on wrap */
+			}
+		</style>
+	</head>
+	<body bgcolor="black">
+		<div class="cont">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box2">Box2 a</div>
+			<div class="box2">Box2 b</div>
+		</div>
+	</body>
+</html>
