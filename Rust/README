@@ -20,3 +20,6 @@ println!("Hey {}", name);		// prints out "Hey <name>". python style, printf styl
 
 crate = collection of rust files
 mod Cargo.toml to inclue "rand" or crate
+
+#### Source
+https://www.youtube.com/watch?v=BpPEoZW5IiY
