@@ -1,4 +1,4 @@
-List of Sources \\
+List of Sources \
  \
 https://www.youtube.com/watch?v=e7BufAVwDiM		 - 		Bash Scripting Full Course 3 Hours \
 https://www.youtube.com/watch?v=oxuRxtrO2Ag		 - 		Beginner's Guide to the Bash Terminal \
