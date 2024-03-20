@@ -1,22 +1,33 @@
 fn main() {
-    let mut sum = 0;
+    let mut count: u32 = 0u32;
+    println!("counting till infinity");
 
-    for i in -3..2 { // -3 to 1
-        sum += i
+    // inf loop
+    loop {
+        count += 1;
+
+        if count == 7{
+            println!("seven");
+            continue;
+            panic!("seven omg omg omg");
+        }
+
+        println!("{}", count);
+
+        if count == 10{
+            println!("ok we stop");
+            break;
+        }
     }
 
-    assert!(sum == -5);
+    // Value assignment
+    let mut counter: i32 = 0;
+    let fin_val: i32 = loop{ 
+        counter += 1;
+        if counter == 40 {
+            break counter; // breaks and gives counter to fin_val;
+        }
+    };
 
-    for c in 'a'..='z' { //prints a to z
-        println!("{} {}", c, c as u8); //prints character's ascii value in unsigned 8 form
-    }
-
-
-    /*
-     * use std::ops::{Range, RangeInclusive};
-     * fn main() {
-     * assert_eq!((1..5), Range{ start: 1, end : 5}); // This is the more verbose way to do so. 1 to 4              
-     * assert_eq!((1..=5), RangeInclusive::new(1,5)); // 1 to 5
-     * }
-     */
+    assert_eq!(fin_val, 40);
 }
