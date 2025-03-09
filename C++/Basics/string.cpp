@@ -9,6 +9,7 @@ int main() {
 	cout << test.size()     << endl;
 	cout << test.find ('W') << endl;
 	cout << test.find ('o') << endl;
+	cout << test.find ('3') << endl;
 
 	return 0;
 }

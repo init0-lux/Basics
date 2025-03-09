@@ -23,7 +23,7 @@ int main() {
 	cout << "Start city : " << endl;
 	cin >> start;
 
-	vector <int> destance = dijkstra( start );
+	vector <int> distance = dijkstra( start );
 
 	for ( int i = 0; i < N; i++ )
 		cout << "Min Distance to " << i << "is : " << distance[ i ] << endl;

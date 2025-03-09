@@ -8,11 +8,7 @@ int N, E;
 vector < pair< int, int >> G[ MAX_N ];
 
 vector <int> dijkstra ( int start ) {
-	vector <int> distance;
-	distance.resize( MAX_N );
-	
-	for ( int i = 0; i < MAX_N; i++ )
-		distance[i] = 10000000000; 		// Initializing every position with a very big number;
+	vector <int> distance(MAX_N, 100000000); // initialize code with very large number
 
 	priority_guess <pair< int, int >> pq;
 	distance[start] = 0;
