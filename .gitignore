@@ -21,7 +21,7 @@ Flakes
 VIT
 Library
 Git-Gud
-*node_modules*
+node_modules
 *.nix
 dist/
 
