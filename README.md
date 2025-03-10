@@ -8,6 +8,7 @@ follow along?
 
 - C/C++
 - Python
+- Java
 - Bash
 - Rust
 - Web
